@@ -21,7 +21,7 @@
 }
 
 .banner-hero-area {
-    background: url("./assets/banner.jpg");
+    background: url("./banner.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
