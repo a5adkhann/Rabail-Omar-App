@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer className="border-t-2">
-        <div className="grid grid-cols-4 container mx-auto px-36 py-20">
+        <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-1 container mx-auto px-36 py-20">
             <div className="footer-img">
                 <img src="./assets/logo.png" alt="" />
             </div>

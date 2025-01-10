@@ -4,23 +4,25 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Collections = () => {
   return (
     <>
-      <div className="collections-header container mx-auto w-[800px] text-center py-20">
+      <div className="collections-header container mx-auto text-center py-20">
         <h6 className="heading font-bold text-2xl py-3">
           Discover Women's & Kid's Luxury Eastern Wear
         </h6>
-        <p>
-          Welcome to Rabail Omar, where tradition meets elegance in Women's
-          Luxury Eastern Wear. Explore our curated collection of exquisite
-          Pakistani dresses, perfect for grand events or elevating your
-          wardrobe, blending rich traditions with contemporary trends for every
-          occasion.
-        </p>
+        <div className="flex justify-center w-[calc(100%-4rem/1.0)]">
+          <p>
+            Welcome to Rabail Omar, where tradition meets elegance in Women's
+            Luxury Eastern Wear. Explore our curated collection of exquisite
+            Pakistani dresses, perfect for grand events or elevating your
+            wardrobe, blending rich traditions with contemporary trends for every
+            occasion.
+          </p>
+        </div>
       </div>
 
       <div className="collections-section container mx-auto">
         <h1 className="font-bold heading text-2xl">Collections</h1>
-        <div className="collections-container grid grid-cols-3 gap-20">
-         
+        <div className="collections-container flex flex-wrap gap-28">
+
           <div className="collection-1 w-80">
             <div className="collection-img relative w-full pt-[100%] overflow-hidden bg-gray-100">
               <img
@@ -111,31 +113,31 @@ const Collections = () => {
               <p className="heading flex items-center gap-2">Bridals <FaArrowRightLong /></p>
             </div>
           </div>
-          </div>
+        </div>
       </div>
 
-      <div className="explore-collections container mx-auto w-[800px] py-20 leading-10">
-        <h1 className="text-center font-bold text-2xl py-3 heading">Explore Our Collections</h1>
-        <p>Our extensive range of collections is crafted to suit a variety of tastes and occasions:</p>
-        <ul>
+      <div className="explore-collections flex justify-center md:px-0 px-40 leading-10">
+        <div>
+          <h1 className="text-center font-bold text-2xl py-3 heading">Explore Our Collections</h1>
+          <p>Our extensive range of collections is crafted to suit a variety of tastes and occasions:</p>
+          <ul>
             <li className="list-disc">Formals: Timeless elegance with intricate designs for weddings or any formal occasion.</li>
-
             <li className="list-disc">Luxury Prets: Chic, ready-to-wear outfits that blend modern trends with traditional craftsmanship.</li>
-
             <li className="list-disc">Kids Formals: Beautifully tailored dresses for young girls, perfect for formal events like wedding or Eid.</li>
-
             <li className="list-disc">Kids Eid Wear: Festive and stylish outfits for young girls to celebrate Eid in elegance.</li>
-
             <li className="list-disc">Mommy & Me Dresses: Coordinated outfits for mothers and daughters, celebrating a special bond.</li>
-
             <li className="list-disc">Bridals: Exquisite bridal wear designed to make your special day unforgettable.</li>
-        </ul>
+          </ul>
         </div>
+      </div>
 
-        <div className="all-occasions container mx-auto w-[800px] py-20 leading-10">
-        <h1 className="text-center font-bold text-2xl py-3 heading">For All Your Occasions</h1>
-        <p>Each collection at Rabail Omar is thoughtfully curated to ensure that you find something that resonates with your personal style. Whether you’re preparing for a wedding, a family gathering, or any special occasion, our collections offer a variety of choices to meet your needs.</p>
+      <div className="all-occasions flex justify-center py-10 md:px-0 px-40 leading-10">
+        <div>
+          <h1 className="text-center font-bold text-2xl heading">All Occasions</h1>
+          <p>Celebrate every occasion in style with our versatile and curated outfits: Casual Wear, Party Wear, Seasonal Collections.</p>
         </div>
+      </div>
+
     </>
   );
 };
