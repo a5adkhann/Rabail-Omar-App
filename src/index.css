@@ -30,6 +30,7 @@
 .navbar ul li {
     border-bottom: 1px solid transparent; 
     transition: border-color 0.3s ease; 
+    cursor: pointer;
 }
 
 .navbar ul li:hover {
