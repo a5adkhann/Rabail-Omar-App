@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container px-6 py-12 mx-auto sm:px-12 md:px-24">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex justify-center footer-img sm:justify-start">
-            <img src="./logo.png" alt="Logo" className="h-auto max-w-full" />
+            <img src="./logo.png" alt="Logo" className="w-48 h-44" />
           </div>
           <div>
             <p className="py-3 text-lg font-semibold">Information</p>
@@ -74,11 +74,12 @@ const Footer = () => {
                 rabailomar@gmail.com
               </li>
               <li>
-                <span className="font-semibold">Address:</span> 80/1, Street 2,
-                Khayaban Badar, Phase 6, DHA, Karachi.
+                <span className="font-semibold">Address:</span> C-6, Block-4A,Gulshan e Iqbal, Karachi, Pakistan
               </li>
               <li>
-                <span className="font-semibold">Phone:</span> +92322-2737090
+                <span className="font-semibold">Phone:</span> +92 332 3249818
+                <span className="font-semibold">Phone:</span> +92 306 2430622
+                <span className="font-semibold">Phone:</span> +92 332 2902327
               </li>
             </ul>
           </div>
