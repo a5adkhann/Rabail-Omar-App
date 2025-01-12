@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import { IoIosArrowDown } from "react-icons/io";
 
 const LuxuryPretCards = () => {
@@ -65,6 +66,7 @@ const LuxuryPretCards = () => {
 
   return (
     <>
+    <Fade direction="up" duration={1000} triggerOnce>
       <div className="flex flex-col items-start justify-between gap-4 px-5 pb-8 md:flex-row md:items-center md:px-10 lg:px-20 pret-wear-card-container md:gap-0">
         <div className="w-full filter-container md:w-auto">
           <p className="flex items-center gap-2 text-sm md:text-base">
@@ -80,7 +82,9 @@ const LuxuryPretCards = () => {
           </p>
         </div>
       </div>
+      </Fade>
 
+      <Fade direction="up" duration={1000} triggerOnce>
       <div className="container px-4 py-10 mx-auto sm:px-6 lg:px-8 luxury-pret-cards-container">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           
@@ -101,6 +105,7 @@ const LuxuryPretCards = () => {
           ))}
         </div>
       </div>
+      </Fade>
     </>
   );
 };

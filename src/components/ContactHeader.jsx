@@ -1,8 +1,10 @@
 import React from 'react'
+import { Fade } from 'react-awesome-reveal'
 
 const ContactHeader = () => {
   return (
     <>
+    <Fade direction="up" duration={1000} triggerOnce>
         <div className="contact-header text-center py-10 w-[60vw] container mx-auto">
         <p className='py-3 text-2xl font-bold heading'>Contact Us</p>
         <p>
@@ -18,6 +20,7 @@ const ContactHeader = () => {
         <p>📞
         +92322-2737090</p>
       </div>
+      </Fade>
     </>
   )
 }

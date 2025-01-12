@@ -8,6 +8,7 @@ import Formals from './pages/Formals'
 import Mommy from './pages/Mommy'
 import LuxuryPret from './pages/LuxuryPret'
 import Contact from './pages/Contact'
+import { Fade } from 'react-awesome-reveal'
 
 const App = () => {
   return (

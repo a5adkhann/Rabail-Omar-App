@@ -1,8 +1,10 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 const LuxuryPretText = () => {
   return (
     <>
+    <Fade direction="up" duration={1000} triggerOnce>
       <div className="text-center py-8 w-[60vw] container mx-auto">
         <h6 className="py-3 text-2xl font-bold heading">
           Luxury Pret Wear for Women
@@ -17,7 +19,9 @@ const LuxuryPretText = () => {
           contemporary trends, making it easy for you to shine on any occasion.
         </p>
       </div>
+      </Fade>
 
+      <Fade direction="up" duration={1000} triggerOnce>
       <div className="text-center py-8 w-[60vw] container mx-auto">
         <h6 className="py-3 text-2xl font-bold heading">
           Pakistani Luxury Pret Wear
@@ -33,7 +37,9 @@ const LuxuryPretText = () => {
           unique taste and personality.
         </p>
       </div>
+      </Fade>
 
+      <Fade direction="up" duration={1000} triggerOnce>
       <div className="text-center py-8 w-[60vw] container mx-auto">
         <h6 className="py-3 text-2xl font-bold heading">
           Women's Luxury Pret Collection
@@ -49,7 +55,9 @@ const LuxuryPretText = () => {
           but also feels comfortable, making it a joy to wear.
         </p>
       </div>
+      </Fade>
 
+      <Fade direction="up" duration={1000} triggerOnce>
       <div className="text-center py-8 w-[60vw] container mx-auto">
         <h6 className="py-3 text-2xl font-bold heading">
           Elevate Your Everyday Style
@@ -65,6 +73,7 @@ const LuxuryPretText = () => {
           both fashionable and functional.
         </p>
       </div>
+      </Fade>
     </>
   );
 };

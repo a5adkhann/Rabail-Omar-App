@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import { IoIosArrowDown } from "react-icons/io";
 
 const FormalsCards = () => {
@@ -92,6 +93,7 @@ const FormalsCards = () => {
 
   return (
     <>
+    <Fade direction="up" duration={1000} triggerOnce>
       <div className="px-5 py-10 md:px-10 lg:px-20 formals-header">
         <h2 className="text-lg font-bold md:text-2xl heading">Formals</h2>
       </div>
@@ -111,7 +113,9 @@ const FormalsCards = () => {
           </p>
         </div>
       </div>
+      </Fade>
 
+<Fade direction="up" duration={1000} triggerOnce>
       <div className="container px-4 py-10 mx-auto sm:px-6 lg:px-8 bridal-cards-container">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           
@@ -132,6 +136,7 @@ const FormalsCards = () => {
           ))}
         </div>
       </div>
+      </Fade>
     </>
   );
 };

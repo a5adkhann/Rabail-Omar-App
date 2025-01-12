@@ -25,7 +25,9 @@ const Navbar = () => {
           <CiSearch className='text-2xl cursor-pointer' onClick={toggleSearchBox} />
         </div>
         <div>
+          <NavLink to="/">
           <img src="./logo.png" alt="Logo" />
+          </NavLink>
         </div>
         <div>
           <p className='flex items-center'>

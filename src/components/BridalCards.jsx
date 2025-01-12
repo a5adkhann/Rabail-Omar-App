@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import { IoIosArrowDown } from "react-icons/io";
 
 const BridalCards = () => {
@@ -25,8 +26,10 @@ const BridalCards = () => {
       bridalPrice: "PKR 350,000.00"
     }
   ]
+  
   return (
     <>
+    <Fade direction="up" duration={1000} triggerOnce>
       <div className="px-5 py-10 md:px-10 lg:px-20 bridals-header">
         <h2 className="text-lg font-bold md:text-2xl heading">Bridals</h2>
       </div>
@@ -46,7 +49,9 @@ const BridalCards = () => {
           </p>
         </div>
       </div>
+      </Fade>
 
+      <Fade direction="up" duration={1000} triggerOnce>
       <div className="container px-4 py-10 mx-auto sm:px-6 lg:px-8 bridal-cards-container">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           
@@ -65,9 +70,10 @@ const BridalCards = () => {
             </div>
           </div>
           ))}
-          
         </div>
       </div>
+      </Fade>
+
     </>
   );
 };
