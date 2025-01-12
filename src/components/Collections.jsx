@@ -2,10 +2,54 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Collections = () => {
+  const collectionsCards = [
+    {
+      collectionID: 1,
+      collectionImg: "./collection1.jpg",
+      collectionName: "RHEA - Festive Collection ‘24",
+    },
+
+    {
+      collectionID: 2,
+      collectionImg: "./collection2.jpg",
+      collectionName: "Mommy & Me",
+    },
+
+    {
+      collectionID: 3,
+      collectionImg: "./collection3.jpg",
+      collectionName: "Pret Wear",
+    },
+
+    {
+      collectionID: 4,
+      collectionImg: "./collection4.jpg",
+      collectionName: "Kids Eid Wear",
+    },
+
+    {
+      collectionID: 5,
+      collectionImg: "./collection5.jpg",
+      collectionName: "Kids Formal",
+    },
+
+    {
+      collectionID: 6,
+      collectionImg: "./collection6.jpg",
+      collectionName: "Formals",
+    },
+
+    {
+      collectionID: 7,
+      collectionImg: "./collection7.jpg",
+      collectionName: "Bridals",
+    },
+  ];
+
   return (
     <>
-      <div className="collections-header container mx-auto text-center py-20">
-        <h6 className="heading font-bold text-2xl py-3">
+      <div className="container py-20 mx-auto text-center collections-header">
+        <h6 className="py-3 text-2xl font-bold heading">
           Discover Women's & Kid's Luxury Eastern Wear
         </h6>
         <div className="flex justify-center w-[calc(100%-4rem/1.0)]">
@@ -13,131 +57,83 @@ const Collections = () => {
             Welcome to Rabail Omar, where tradition meets elegance in Women's
             Luxury Eastern Wear. Explore our curated collection of exquisite
             Pakistani dresses, perfect for grand events or elevating your
-            wardrobe, blending rich traditions with contemporary trends for every
-            occasion.
+            wardrobe, blending rich traditions with contemporary trends for
+            every occasion.
           </p>
         </div>
       </div>
 
-      <div className="collections-section container mx-auto">
-        <h1 className="font-bold heading text-2xl">Collections</h1>
-        <div className="collections-container flex flex-wrap gap-28">
+      <div className="px-5 py-10 md:px-10 lg:px-20 collections-header">
+        <h2 className="text-lg font-bold md:text-2xl heading">Collections</h2>
+      </div>
 
-          <div className="collection-1 w-80">
-            <div className="collection-img relative w-full pt-[100%] overflow-hidden bg-gray-100">
-              <img
-                src="./assets/collection1.jpg"
-                alt=""
-                className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-              />
+      <div className="container px-4 py-10 mx-auto collections-section sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {collectionsCards.map((collection) => (
+            <div className="collection-card w-80">
+              <div className="collection-img relative w-full pt-[100%] overflow-hidden bg-gray-100">
+                <img
+                  src={collection.collectionImg}
+                  alt=""
+                  className="absolute top-0 left-0 object-cover w-full h-full transition-transform duration-300 ease-in-out hover:scale-105"
+                />
+              </div>
+              <div className="mt-2 collection-text">
+                <p className="flex items-center gap-2 heading">
+                  {collection.collectionName} <FaArrowRightLong />
+                </p>
+              </div>
             </div>
-            <div className="collection-text mt-2">
-              <p className="heading flex items-center gap-2">RHEA - Festive Collection ‘24 <FaArrowRightLong /></p>
-            </div>
-          </div>
-
-          <div className="collection-2 w-80">
-            <div className="collection-img relative w-full pt-[100%] overflow-hidden bg-gray-100">
-              <img
-                src="./assets/collection2.jpg"
-                alt=""
-                className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-              />
-            </div>
-            <div className="collection-text mt-2">
-              <p className="heading flex items-center gap-2">Mommy & Me <FaArrowRightLong /></p>
-            </div>
-          </div>
-
-          <div className="collection-3 w-80">
-            <div className="collection-img relative w-full pt-[100%] overflow-hidden bg-gray-100">
-              <img
-                src="./assets/collection3.jpg"
-                alt=""
-                className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-              />
-            </div>
-            <div className="collection-text mt-2">
-              <p className="heading flex items-center gap-2">Pret Wear <FaArrowRightLong /></p>
-            </div>
-          </div>
-
-          <div className="collection-4 w-80">
-            <div className="collection-img relative w-full pt-[100%] overflow-hidden bg-gray-100">
-              <img
-                src="./assets/collection4.jpg"
-                alt=""
-                className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-              />
-            </div>
-            <div className="collection-text mt-2">
-              <p className="heading flex items-center gap-2">Kids Eid Wear <FaArrowRightLong /></p>
-            </div>
-          </div>
-
-          <div className="collection-5 w-80">
-            <div className="collection-img relative w-full pt-[100%] overflow-hidden bg-gray-100">
-              <img
-                src="./assets/collection5.jpg"
-                alt=""
-                className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-              />
-            </div>
-            <div className="collection-text mt-2">
-              <p className="heading flex items-center gap-2">Kids Formal <FaArrowRightLong /></p>
-            </div>
-          </div>
-
-          <div className="collection-6 w-80">
-            <div className="collection-img relative w-full pt-[100%] overflow-hidden bg-gray-100">
-              <img
-                src="./assets/collection6.jpg"
-                alt=""
-                className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-              />
-            </div>
-            <div className="collection-text mt-2">
-              <p className="heading flex items-center gap-2">Formals <FaArrowRightLong /></p>
-            </div>
-          </div>
-
-          <div className="collection-7 w-80">
-            <div className="collection-img relative w-full pt-[100%] overflow-hidden bg-gray-100">
-              <img
-                src="./assets/collection7.jpg"
-                alt=""
-                className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-              />
-            </div>
-            <div className="collection-text mt-2">
-              <p className="heading flex items-center gap-2">Bridals <FaArrowRightLong /></p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
-      <div className="explore-collections flex justify-center md:px-0 px-40 leading-10">
+      <div className="flex justify-center px-8 py-10 leading-8 explore-collections md:px-20 lg:px-40">
         <div>
-          <h1 className="text-center font-bold text-2xl py-3 heading">Explore Our Collections</h1>
-          <p>Our extensive range of collections is crafted to suit a variety of tastes and occasions:</p>
-          <ul>
-            <li className="list-disc">Formals: Timeless elegance with intricate designs for weddings or any formal occasion.</li>
-            <li className="list-disc">Luxury Prets: Chic, ready-to-wear outfits that blend modern trends with traditional craftsmanship.</li>
-            <li className="list-disc">Kids Formals: Beautifully tailored dresses for young girls, perfect for formal events like wedding or Eid.</li>
-            <li className="list-disc">Kids Eid Wear: Festive and stylish outfits for young girls to celebrate Eid in elegance.</li>
-            <li className="list-disc">Mommy & Me Dresses: Coordinated outfits for mothers and daughters, celebrating a special bond.</li>
-            <li className="list-disc">Bridals: Exquisite bridal wear designed to make your special day unforgettable.</li>
+          <h1 className="py-3 text-xl font-bold text-center md:text-2xl heading">
+            Explore Our Collections
+          </h1>
+          <p className="text-center md:text-left">
+            Our extensive range of collections is crafted to suit a variety of
+            tastes and occasions:
+          </p>
+          <ul className="mt-4 space-y-4 md:space-y-2">
+            <li className="list-disc">
+              <u>Formals:</u> Timeless elegance with intricate designs
+              for weddings or any formal occasion.
+            </li>
+            <li className="list-disc">
+              <u>Luxury Prets:</u> Chic, ready-to-wear outfits that
+              blend modern trends with traditional craftsmanship.
+            </li>
+            <li className="list-disc">
+              <u>Kids Formals:</u> Beautifully tailored dresses for
+              young girls, perfect for formal events like weddings or Eid.
+            </li>
+            <li className="list-disc">
+              <u>Kids Eid Wear:</u> Festive and stylish outfits for
+              young girls to celebrate Eid in elegance.
+            </li>
+            <li className="list-disc">
+              <u>Mommy & Me Dresses:</u> Coordinated outfits for
+              mothers and daughters, celebrating a special bond.
+            </li>
+            <li className="list-disc">
+              <u>Bridals:</u> Exquisite bridal wear designed to make
+              your special day unforgettable.
+            </li>
           </ul>
         </div>
       </div>
 
-      <div className="all-occasions flex justify-center py-10 md:px-0 px-40 leading-10">
-        <div>
-          <h1 className="text-center font-bold text-2xl heading">All Occasions</h1>
-          <p>Celebrate every occasion in style with our versatile and curated outfits: Casual Wear, Party Wear, Seasonal Collections.</p>
-        </div>
+      <div className="text-center py-8 w-[60vw] container mx-auto">
+          <h1 className="text-2xl font-bold text-center heading">
+            All Occasions
+          </h1>
+          <p>
+          Each collection at Rabail Omar is thoughtfully curated to ensure that you find something that resonates with your personal style. Whether you’re preparing for a wedding, a family gathering, or any special occasion, our collections offer a variety of choices to meet your needs.
+          </p>
       </div>
-
     </>
   );
 };

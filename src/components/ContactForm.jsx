@@ -3,10 +3,10 @@ import React from 'react'
 const ContactForm = () => {
   return (
     <>
-        <div className="contact-form-container mx-auto container">
-  <h1 className="font-bold text-2xl text-center py-3 heading">Contact Form</h1>
-  <form className="container mx-auto px-5 md:px-20 lg:px-48">
-    <div className="form-fields-divider flex flex-col md:flex-row gap-5 pb-5">
+        <div className="container py-10 mx-auto contact-form-container">
+  <h1 className="py-3 text-2xl font-bold text-center heading">Contact Form</h1>
+  <form className="container px-5 mx-auto md:px-20 lg:px-48">
+    <div className="flex flex-col gap-5 pb-5 form-fields-divider md:flex-row">
       <input
         className="w-full md:w-[50%] py-2 px-5"
         type="text"
@@ -19,9 +19,9 @@ const ContactForm = () => {
       />
     </div>
 
-    <div className="form-fields-divider pb-5">
+    <div className="pb-5 form-fields-divider">
       <input
-        className="w-full py-2 px-5"
+        className="w-full px-5 py-2"
         type="text"
         placeholder="Phone number"
       />
@@ -34,7 +34,7 @@ const ContactForm = () => {
       ></textarea>
     </div>
 
-    <div className="form-btn text-center mt-5">
+    <div className="mt-5 text-center form-btn">
       <button className="bg-black text-[#FFF] py-2 px-8 text-sm">Send</button>
     </div>
   </form>
