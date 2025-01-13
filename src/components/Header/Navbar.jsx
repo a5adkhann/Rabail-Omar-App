@@ -19,7 +19,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Desktop Navbar */}
       <div className='flex-wrap items-center hidden py-10 nav-topbar md:flex justify-evenly'>
         <div>
           <CiSearch className='text-2xl cursor-pointer' onClick={toggleSearchBox} />
@@ -36,8 +35,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="pb-8 navbar">
-        {/* Desktop View */}
+      <div className="pb-8 navbar py-10">
         <div className='desktop_view'>
           <ul className='justify-center hidden gap-10 md:flex'>
             <li>
@@ -109,7 +107,6 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Mobile View */}
         <div className="flex items-center justify-between px-10 mobile_view md:hidden">
           <div>
             <RxHamburgerMenu
@@ -118,7 +115,7 @@ const Navbar = () => {
             />
           </div>
           <div className='navbar-img'>
-            <img src="./logo.png" alt="Logo" />
+            <img src="./logo.png" alt="Logo" className='w-20' />
           </div>
           <div>
             <CiSearch className='inline text-2xl cursor-pointer me-4' onClick={toggleSearchBox} />
