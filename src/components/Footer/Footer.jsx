@@ -77,8 +77,8 @@ const Footer = () => {
                 <span className="font-semibold">Address:</span> C-6, Block-4A,Gulshan e Iqbal, Karachi, Pakistan
               </li>
               <li>
-                <span className="font-semibold">Phone:</span> +92 332 3249818
-                <span className="font-semibold">Phone:</span> +92 306 2430622
+                <span className="font-semibold">Phone:</span> +92 332 3249818 <br />
+                <span className="font-semibold">Phone:</span> +92 306 2430622 <br />
                 <span className="font-semibold">Phone:</span> +92 332 2902327
               </li>
             </ul>

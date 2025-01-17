@@ -115,7 +115,9 @@ const Navbar = () => {
             />
           </div>
           <div className='navbar-img'>
+          <NavLink to="/">  
             <img src="./logo.png" alt="Logo" className='w-20' />
+          </NavLink>
           </div>
           <div>
             <CiSearch className='inline text-2xl cursor-pointer me-4' onClick={toggleSearchBox} />

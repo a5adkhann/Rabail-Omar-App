@@ -71,7 +71,7 @@ const Collections = () => {
       </Fade>
 
       <Fade direction="up" duration={1000} triggerOnce>
-        <div className="container px-4 py-10 mx-auto collections-section sm:px-6 lg:px-8">
+        <div className="container px-4 py-10 mx-auto sm:px-6 lg:px-8 collections-section">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {collectionsCards.map((collection) => (
               <div className="collection-card w-80">
